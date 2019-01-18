@@ -33,7 +33,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT txn_id, user_id FROM xdce0_payperdownloadplus_payments WHERE txn_id ='$dlid' "; //database query - 1
+$sql = "SELECT txn_id, user_id FROM prefix_payperdownloadplus_payments WHERE txn_id ='$dlid' "; //database query - 1
 $result = $conn->query($sql);
 
 // if $sql querry is positive set variables for next query $sql2
@@ -49,7 +49,7 @@ if ($result->num_rows > 0) {
 }
 
 //second query that determines is the user valid for update
-$sql2 = "SELECT user_id, enabled FROM xdce0_payperdownloadplus_users_licenses WHERE user_id ='$userid' "; //database query - 2
+$sql2 = "SELECT user_id, enabled FROM prefix_payperdownloadplus_users_licenses WHERE user_id ='$userid' "; //database query - 2
 $result2 = $conn->query($sql2);
 
 if ($result->num_rows > 0) {
