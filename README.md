@@ -10,7 +10,7 @@ After all checks pass trough it will send a file to Joomla for it to update.
 
 You will need to point your update server to this "download.php" file
 
-<downloads><downloadurl type="full" format="zip">https://www.website.com/downloads/download.php</downloadurl></downloads>
+'<downloads><downloadurl type="full" format="zip">https://www.website.com/downloads/download.php</downloadurl></downloads>'
 
 
 to make this work you will have to manually change the updated file inside download.php with each update (for now)
