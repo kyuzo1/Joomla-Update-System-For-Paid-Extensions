@@ -15,9 +15,9 @@ $ip =  $_SERVER['REMOTE_ADDR']; // take id from the server - must upgrade to rea
 $dlid = $_GET['dlid']; // get download id data from user - possible upgrade to check based on domain name
 
 $servername = "localhost";  // set it to connect using joomla database connection (if possible)
-$username = "dubrava_guster";
-$password = "wca,:PD7[&HM{x^C";
-$dbname = "dubrava_salamander-studios";
+$username = "database_user";
+$password = "database_pwd";
+$dbname = "database_name";
 
 $log = $datum .' - '. $dlid .' - '. $ip;  // construct log entry
 $log .= "\r\n";
