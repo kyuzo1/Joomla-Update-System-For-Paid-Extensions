@@ -1,9 +1,10 @@
 # Joomla-Update-System-For-Paid-Extensions
 
 This is a continuations of https://github.com/mabdelaziz77/downloadid-custom-field
+
 Mohamed has developed a script that when paired with your extension inserts a input field into it and writes this data into joomla update table, setting "extra_query" used for validating your user subscription.
 
-Now my script comes into play - it will take the value sent by Joomla "dlid" in this case and run it againt the database to find a valid subscription.
+Now my script comes into play - it will take the value sent by Joomla "dlid" in this case and run it against the database to find a valid subscription.
 After all checks pass trough it will send a file to Joomla for it to update.
 
 
