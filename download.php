@@ -9,7 +9,7 @@
 ===============================================================================
 */
 
-$file="/home/dubrava/NSB-secure-download/log.txt"; // log file
+$file="/home/path/log.txt"; // log file
 $datum = strftime("%d. %m. %Y - %T"); // set your own time and date format for log file
 $ip =  $_SERVER['REMOTE_ADDR']; // take id from the server - must upgrade to real ip  <--------
 $dlid = $_GET['dlid']; // get download id data from user - possible upgrade to check based on domain name
@@ -69,8 +69,8 @@ $conn->close(); // that's all folks
 if($enabled == 1) {
 
 // set file location variables (must be updated with each new version - work on a plugin maybe? perhaps)
-  $filename = "mod_nice_social_bookmark_pro-3.66.zip";
-  $filepath = "/home/dubrava/NSB-secure-download/";
+  $filename = "mod_module_pro-3.66.zip";
+  $filepath = "/home/secure/path/";
 
   header("Content-type: application/x-zip");
   header("Content-Length: ".filesize($filepath.$filename));
