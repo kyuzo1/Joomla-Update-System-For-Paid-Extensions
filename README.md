@@ -6,6 +6,7 @@ Mohamed has developed a script that when paired with your extension inserts a in
 
 Now my script comes into play - it will take the value sent by Joomla "dlid" in this case and run it against the database to find a valid subscription.
 After all checks pass trough it will send a file to Joomla for it to update.
+A log file is created and each acces to download.php is loged.
 
 
 You will need to point your update server to this "download.php" file
